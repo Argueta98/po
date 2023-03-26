@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contador de saltos</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em auto;
+        padding: 1em;
+        border: 2px solid #333;
+        border-radius: 5px;
+        max-width: 400px;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      input[type="text"] {
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border: 1 px solid;
+        margin-bottom: 1em;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+      #resultado {
+        color: brown;
+        margin: 2em auto;
+        padding: 1em;
+        border: 2px solid #333;
+        border-radius: 5px;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contador de saltos</h1>
+    <p>Ingrese el número del planeta inicial (debe ser mayor o igual a 10000):</p>
+    <input type="text" id="inputNumero">
+    <button onclick="contarSaltos()">Contar saltos</button>
+    <div id="resultado"></div>
+    <script src="contador-saltos.js"></script>
+  </body>
+</html>

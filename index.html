@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+/*  function contarSaltos(numeroInicial) {
+    let saltos = 0;
+    let planetaActual = numeroInicial;
+  
+    for (; planetaActual !== 1; saltos++) {
+      if (planetaActual % 2 === 0) {
+        planetaActual /= 2;
+      } else {
+        planetaActual = planetaActual * 3 + 1;
+      }
+    }
+  
+    return saltos;
+  }*/
+
+ /* function contarSaltos(numeroInicial) {
+  let saltos = 0;
+  let planetaActual = numeroInicial;
+
+  while (planetaActual !== 1) {
+    if (planetaActual % 2 === 0) {
+      planetaActual /= 2;
+    } else {
+      planetaActual = planetaActual * 3 + 1;
+    }
+    saltos++;
+  }
+
+  return saltos;
+} */
+
+function contarSaltos1(n) {
+  let saltos = 0;
+  
+  while (n > 1) {
+   // console.log(`Planeta actual: ${n}`);
+    if (n % 2 === 0) {
+      n /= 2;
+    } else {
+      n = n * 3 + 1;
+    }
+    saltos++;
+  }
+  
+ // console.log(`Planeta final: ${n}`);
+  return saltos;
+}
+
+const planetaInicial = prompt("Ingrese el número del planeta inicial:");
+if (planetaInicial < 10000) {
+  alert("El número debe ser mayor o igual a 10000.");
+} else {
+  const saltos = contarSaltos1(planetaInicial);
+  console.log(`El número total de saltos desde el planeta ${planetaInicial} hasta la Tierra es ${saltos}.`);
+}
+
+//const planetaInicial = 10001; // o cualquier otro número mayor a 10000
+//const saltos = contarSaltos(planetaInicial);
+
+//console.log(`El número total de saltos desde el planeta ${planetaInicial} hasta la Tierra es ${saltos}.`);
+
+
+
+</script>
+
+</html>
+  
